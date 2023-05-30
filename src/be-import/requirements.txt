@@ -1,0 +1,7 @@
+python-dotenv
+redis
+Flask
+waitress
+openpyxl
+openpyxl_image_loader
+requests

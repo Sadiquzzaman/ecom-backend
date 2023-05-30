@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}File Xlsx{% endblock %} {% block head
+%}
+<form action="/file" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="token" class="form-label">Token:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="token"
+      aria-describedby="token"
+      name="token"
+    />
+    <div id="tokenhelper" class="form-text">JWT token</div>
+  </div>
+  <div class="mb-3">
+    <label for="xlsx" class="form-label">xlsx file upload</label>
+    <input type="file" class="form-control" id="xlsx" name="xlsx" />
+    <div id="xlsxhelper" class="form-text">Product xlsx file</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

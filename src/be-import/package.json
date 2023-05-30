@@ -1,0 +1,12 @@
+{
+  "name": "xls-service",
+  "version": "0.1.0",
+  "description": "xls import service by python flask",
+  "main": "index.js",
+  "license": "",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development ./run.sh",
+    "testing": "NODE_ENV=development ./testing.sh"
+  }
+}
